@@ -5,11 +5,16 @@
 }
 body {
     font-family: "Roboto", sans-serif;
-    /* background-color: #fff; */
-    /* color: #434455; */
 }
-p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    display:block;
 }
 ul {
     list-style-type: none;
@@ -18,6 +23,7 @@ ul {
 }
 img {
     display:block;
+    max-width: 100%;
 }
 .visually-hidden {
     position: absolute;
@@ -41,25 +47,44 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.header {
+    
+    border-bottom: 1px solid #e7e9fc;
+}
 .header .header-container {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
     border-bottom: 4px;
     padding-top: 24px;
     padding-bottom: 24px;
+
     
 }
+
+.header .header-navigation {
+    display: flex;
+    gap: 76px;
+}
 .logo {
+
     font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        text-decoration: none;
         color: #4d5ae5;
     }
 .logo-span {
 color: #2e2f42;
 }
+
+.header .header-nav-list {
+    display:flex;
+    gap: 40px;
+}
+    
 .header .header-list-item {
     display:block;
     font-weight: 500;
@@ -73,8 +98,10 @@ color: #2e2f42;
 .header .header-list-item:focus {
  color: #404bbf;
 }
-.contacts {
+.contacts-list {
 font-style: normal;
+display: flex;
+    gap: 40px;
 }
 .contacts .contacts-link {
     display: block;
@@ -92,10 +119,10 @@ color: #404bbf;
 .hero {
 background-color: #2e2f42;
 }
-/* .hero .hero-container { */
-    /* padding-top:188px; */
-    /* padding-bottom: 188px; */
-/* } */
+ .hero .hero-container { 
+    padding-top:68px; 
+    padding-bottom: 68px; 
+ } 
 .hero-header {
     margin: 0 auto;
     max-width: 496px;
@@ -125,13 +152,23 @@ background-color: #2e2f42;
 .hero .button-hero:focus {
  background: #404bbf;
 }
+.advantages .advantages-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
+.advantages .advantages-list-item {
+    width: calc((100% - 72px ) / 4);
+}
 .advantages .advantages-list-name {
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
+
 .advantages .advantages-list-text {
     font-size: 16px;
     line-height: 1.5;
@@ -141,6 +178,11 @@ background-color: #2e2f42;
 .team {
     background-color: #F4F4FD;
 }
+.team .team-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
 .team-name {
         font-weight: 700;
         font-size: 36px;
@@ -149,13 +191,19 @@ background-color: #2e2f42;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 .team .team-list-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    
 }
 .team .team-card {
     padding-top: 32px;
     padding-bottom: 32px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .team .team-names {
         font-weight: 500;
@@ -164,6 +212,7 @@ background-color: #2e2f42;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .team .team-text {
         font-size: 16px;
@@ -172,8 +221,10 @@ background-color: #2e2f42;
         text-align: center;
         color: #434455;
 }
-.portfolio {
-    
+.portfolio .portfolio-list {
+display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .portfolio-name {
     font-weight: 700;
@@ -183,12 +234,21 @@ background-color: #2e2f42;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .portfolio .portfolio-list-item {
     background-color: #FFFFFF
+    width: calc((100% - 48px) / 3);
+    
+}
+.portfolio .portfolio-card {
+border-left:1px solid #e7e9fc;
+border-right:1px solid #e7e9fc;
+border-bottom: 1px solid #e7e9fc;
+
 }
 .portfolio .projects-names {
-    margin-top: 32px;
+    padding-top: 32px;
     margin-left: 16px;
     margin-bottom: 8px;
     font-weight: 500;
