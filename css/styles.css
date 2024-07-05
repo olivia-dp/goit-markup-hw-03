@@ -60,7 +60,6 @@ img {
 
 .header .header-navigation {
     display: flex;
-    gap: 76px;
     align-items: center;
 }
 .logo {
@@ -72,7 +71,7 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin-right: 76px
+        margin-right: 76px;
     }
 .logo-span {
 color: #2e2f42;
@@ -121,8 +120,7 @@ background-color: #2e2f42;
 padding: 188px 0;
 }
  .hero .hero-container { 
-    padding-top:68px; 
-    padding-bottom: 68px; 
+
  } 
 .hero-header {
     margin: 0 auto;
@@ -255,8 +253,6 @@ border-bottom: 1px solid #e7e9fc;
 
 }
 .portfolio .projects-names {
-    padding-top: 32px;
-    margin-left: 16px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -269,8 +265,6 @@ border-bottom: 1px solid #e7e9fc;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-left: 16px;
-    margin-bottom: 32px;
 }
  .down-menu .footer-container {
     
